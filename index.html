@@ -3,7 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zaruba-EDV - Chatwoot & n8n Services</title>
+    <title>Zaruba-EDV - Chatwoot, N8N & Fionio Experte | Wien, Niederösterreich</title>
+    <meta name="description" content="Professionelle Chatwoot Open Source, N8N Automatisierungen und Fionio Voice Assistenten Services in Wien, Niederösterreich. Hetzner & Coolify Hosting-Lösungen aus Gramatneusiedl.">
+    <meta name="keywords" content="Chatwoot, N8N, Fionio, Hetzner, Coolify, Wien, Österreich, Niederösterreich, Gramatneusiedl, Open Source, Automatisierung, Voice Assistenten">
+    <meta name="author" content="Zaruba-EDV">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://zaruba-edv.at">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Zaruba-EDV - Chatwoot, N8N & Fionio Experte | Wien, Niederösterreich">
+    <meta property="og:description" content="Professionelle Chatwoot Open Source, N8N Automatisierungen und Fionio Voice Assistenten Services in Wien, Niederösterreich.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zaruba-edv.at">
+    <meta property="og:locale" content="de_AT">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Zaruba-EDV - Chatwoot, N8N & Fionio Experte">
+    <meta name="twitter:description" content="Professionelle digitale Lösungen in Wien und Niederösterreich">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Zaruba-EDV",
+      "description": "Digitale Lösungen für Unternehmen - Chatwoot, N8N, Fionio",
+      "url": "https://zaruba-edv.at",
+      "telephone": "+43",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Gramatneusiedl",
+        "addressRegion": "Niederösterreich",
+        "addressCountry": "AT"
+      },
+      "areaServed": ["Wien", "Niederösterreich", "Österreich"],
+      "serviceType": ["Chatwoot Open Source", "N8N Automatisierung", "Fionio Voice Assistenten", "Hetzner Hosting", "Coolify Deployment"]
+    }
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
@@ -14,37 +51,48 @@
     </style>
 </head>
 <body class="bg-gray-50">
-    <!-- Header -->
-    <header class="bg-white shadow-sm">
-        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-6">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
                 <div class="flex items-center">
-                    <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center mr-3">
-                        <span class="text-white font-bold text-lg">Z</span>
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">Z</span>
+                        </div>
+                        <span class="ml-3 text-xl font-bold text-gray-900">Zaruba-EDV</span>
                     </div>
-                    <h1 class="text-2xl font-bold text-gray-900">Zaruba-EDV</h1>
                 </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#services" class="text-gray-600 hover:text-blue-600 transition-colors">Services</a>
-                    <a href="#features" class="text-gray-600 hover:text-blue-600 transition-colors">Features</a>
-                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors">Kontakt</a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-gray-700 hover:text-blue-600 transition-colors">Services</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors">Über uns</a>
+                    <a href="#contact" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">Kontakt</a>
                 </div>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
-    <section class="gradient-bg text-white py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-5xl font-bold mb-6">Professionelle Kundendienst-Lösungen</h2>
-            <p class="text-xl mb-8 max-w-3xl mx-auto">Wir installieren und konfigurieren Chatwoot und n8n Open Source für Ihr Unternehmen. Erstklassiger Kundensupport war noch nie so einfach.</p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <button onclick="scrollToServices()" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                    Services entdecken
-                </button>
-                <button onclick="scrollToContact()" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
-                    Beratung anfragen
-                </button>
+    <section class="gradient-bg pt-20 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                    <span class="text-yellow-300">Chatwoot, N8N & Fionio</span><br>
+                    Experte in Wien & Niederösterreich
+                </h1>
+                <p class="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
+                    Professionelle Chatwoot Open Source, N8N Automatisierungen und Fionio Voice Assistenten 
+                    Services aus Gramatneusiedl für Wien, Niederösterreich und ganz Österreich. 
+                    Inklusive Hetzner Hosting und Coolify Deployment-Lösungen.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button onclick="scrollToServices()" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                        Services entdecken
+                    </button>
+                    <button onclick="scrollToContact()" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+                        Beratung anfragen
+                    </button>
+                </div>
             </div>
         </div>
     </section>
@@ -53,131 +101,127 @@
     <section id="services" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h3 class="text-4xl font-bold text-gray-900 mb-4">Unsere Services</h3>
-                <p class="text-xl text-gray-600">Open Source Lösungen für modernen Kundensupport</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Chatwoot, N8N & Fionio Services in Wien</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Professionelle Open Source Lösungen mit Hetzner Hosting und Coolify Deployment 
+                    für Unternehmen in Wien, Niederösterreich und ganz Österreich
+                </p>
             </div>
             
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- Chatwoot Card -->
-                <div class="service-card bg-gradient-to-br from-blue-50 to-indigo-100 p-8 rounded-2xl">
-                    <div class="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Chatwoot Service -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
                         </svg>
                     </div>
-                    <h4 class="text-2xl font-bold text-gray-900 mb-4">Chatwoot Installation</h4>
-                    <p class="text-gray-700 mb-6">Vollständige Installation und Konfiguration der Open Source Kundensupport-Plattform. Multi-Channel Support für Website, E-Mail, Social Media und mehr.</p>
-                    <ul class="space-y-3 mb-6">
-                        <li class="flex items-center text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                            </svg>
-                            Live-Chat Widget
-                        </li>
-                        <li class="flex items-center text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                            </svg>
-                            Team-Management
-                        </li>
-                        <li class="flex items-center text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                            </svg>
-                            Automatisierte Antworten
-                        </li>
-                        <li class="flex items-center text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                            </svg>
-                            Reporting & Analytics
-                        </li>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Chatwoot Open Source Wien</h3>
+                    <p class="text-gray-600 mb-6">
+                        Professionelle Chatwoot Implementierung auf Hetzner Servern mit Coolify Deployment. 
+                        Open-Source-Kundensupport-Plattform für optimale Kundenkommunikation in Wien und Niederösterreich.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Hetzner Hosting Setup</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Coolify Deployment</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Multi-Channel Support</li>
                     </ul>
-                    <button onclick="openContactModal('chatwoot')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-                        Chatwoot anfragen
-                    </button>
                 </div>
 
-                <!-- n8n Card -->
-                <div class="service-card bg-gradient-to-br from-purple-50 to-pink-100 p-8 rounded-2xl">
-                    <div class="w-16 h-16 bg-purple-600 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <!-- N8N Automation Service -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                         </svg>
                     </div>
-                    <h4 class="text-2xl font-bold text-gray-900 mb-4">n8n Workflow Automation</h4>
-                    <p class="text-gray-700 mb-6">Automatisieren Sie Ihre Geschäftsprozesse mit der mächtigen Open Source Workflow-Plattform. Verbinden Sie über 400 verschiedene Services.</p>
-                    <ul class="space-y-3 mb-6">
-                        <li class="flex items-center text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                            </svg>
-                            Visual Workflow Editor
-                        </li>
-                        <li class="flex items-center text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                            </svg>
-                            400+ Integrationen
-                        </li>
-                        <li class="flex items-center text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                            </svg>
-                            Zeitgesteuerte Ausführung
-                        </li>
-                        <li class="flex items-center text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                            </svg>
-                            Custom Code Nodes
-                        </li>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">N8N Automatisierungen Österreich</h3>
+                    <p class="text-gray-600 mb-6">
+                        N8N Workflow-Automatisierung auf Hetzner Cloud mit Coolify. Professionelle Prozessautomatisierung 
+                        für Unternehmen in Wien, Niederösterreich und ganz Österreich.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li class="flex items-center"><span class="text-blue-500 mr-2">✓</span> N8N Workflow Design</li>
+                        <li class="flex items-center"><span class="text-blue-500 mr-2">✓</span> Hetzner Cloud Setup</li>
+                        <li class="flex items-center"><span class="text-blue-500 mr-2">✓</span> API Integrationen</li>
                     </ul>
-                    <button onclick="openContactModal('n8n')" class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors">
-                        n8n anfragen
-                    </button>
+                </div>
+
+                <!-- Fionio Voice Service -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Fionio Voice Assistenten Wien</h3>
+                    <p class="text-gray-600 mb-6">
+                        Fionio Voice Assistenten Entwicklung mit Hetzner Hosting und Coolify Deployment. 
+                        Intelligente Sprachassistenten für Unternehmen in Wien, Niederösterreich und Österreich.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li class="flex items-center"><span class="text-purple-500 mr-2">✓</span> Fionio Voice Interface</li>
+                        <li class="flex items-center"><span class="text-purple-500 mr-2">✓</span> KI-Integration</li>
+                        <li class="flex items-center"><span class="text-purple-500 mr-2">✓</span> Mehrsprachiger Support</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="py-20 bg-gray-50">
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h3 class="text-4xl font-bold text-gray-900 mb-4">Warum Zaruba-EDV?</h3>
-                <p class="text-xl text-gray-600">Ihre Vorteile bei der Zusammenarbeit mit uns</p>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Zaruba-EDV Gramatneusiedl</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Als Chatwoot, N8N und Fionio Experte aus Gramatneusiedl unterstütze ich Unternehmen in Wien, 
+                        Niederösterreich und ganz Österreich bei der Digitalisierung ihrer Kommunikation und Prozesse.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Mit fundierter Expertise in Hetzner Cloud Hosting, Coolify Deployment und Open-Source-Technologien 
+                        entwickle ich maßgeschneiderte Chatwoot, N8N und Fionio Lösungen für Ihre spezifischen Anforderungen.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium">Chatwoot</span>
+                        <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">N8N</span>
+                        <span class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-medium">Fionio</span>
+                        <span class="bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-medium">Hetzner</span>
+                        <span class="bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-medium">Coolify</span>
                     </div>
-                    <h4 class="text-xl font-bold text-gray-900 mb-4">Komplett-Service</h4>
-                    <p class="text-gray-600">Von der Installation bis zur Konfiguration - wir übernehmen alles für Sie.</p>
                 </div>
-                
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6">Warum Zaruba-EDV?</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mt-1 mr-4">
+                                <span class="text-white text-sm">✓</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Individuelle Beratung</h4>
+                                <p class="text-gray-600 text-sm">Persönliche Betreuung und maßgeschneiderte Lösungen</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mt-1 mr-4">
+                                <span class="text-white text-sm">✓</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Kosteneffizient</h4>
+                                <p class="text-gray-600 text-sm">Open-Source-Lösungen für optimales Preis-Leistungs-Verhältnis</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mt-1 mr-4">
+                                <span class="text-white text-sm">✓</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Langfristige Unterstützung</h4>
+                                <p class="text-gray-600 text-sm">Kontinuierliche Betreuung und Weiterentwicklung</p>
+                            </div>
+                        </div>
                     </div>
-                    <h4 class="text-xl font-bold text-gray-900 mb-4">Schnelle Umsetzung</h4>
-                    <p class="text-gray-600">Ihr Kundensupport-Portal ist in kürzester Zeit einsatzbereit.</p>
-                </div>
-                
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M12 2.25a9.75 9.75 0 100 19.5 9.75 9.75 0 000-19.5z"></path>
-                        </svg>
-                    </div>
-                    <h4 class="text-xl font-bold text-gray-900 mb-4">Ongoing Support</h4>
-                    <p class="text-gray-600">Auch nach der Installation stehen wir Ihnen mit Rat und Tat zur Seite.</p>
                 </div>
             </div>
         </div>
@@ -185,36 +229,105 @@
 
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h3 class="text-4xl font-bold text-gray-900 mb-4">Bereit für professionellen Kundensupport?</h3>
-            <p class="text-xl text-gray-600 mb-8">Kontaktieren Sie uns für eine kostenlose Beratung und ein individuelles Angebot.</p>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Kontakt aufnehmen</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Lassen Sie uns über Ihr Projekt sprechen. Ich freue mich auf Ihre Anfrage!
+                </p>
+            </div>
             
-            <div class="bg-gray-50 rounded-2xl p-8">
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div>
-                        <h4 class="text-xl font-bold text-gray-900 mb-4">Kontaktinformationen</h4>
-                        <div class="space-y-4 text-left">
-                            <div class="flex items-center">
-                                <svg class="w-5 h-5 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                                </svg>
-                                <span class="text-gray-700">info@zaruba-edv.at</span>
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-white rounded-2xl shadow-xl p-8">
+                    <div class="text-center mb-8">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">WhatsApp Kontakt</h3>
+                        <p class="text-gray-600">Hinterlassen Sie Ihre Nummer für eine schnelle Kontaktaufnahme</p>
+                    </div>
+                    
+                    <form id="whatsappForm" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">
+                                Ihr Name
+                            </label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                class="block w-full px-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 text-lg"
+                                placeholder="Max Mustermann"
+                                required
+                            >
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">
+                                Ihre WhatsApp-Nummer
+                            </label>
+                            <div class="relative">
+                                <select id="countryCode" class="absolute inset-y-0 left-0 pl-3 pr-1 py-3 border-0 bg-transparent text-gray-500 text-sm focus:ring-0 focus:outline-none z-10">
+                                    <option value="+43">🇦🇹 +43</option>
+                                    <option value="+49">🇩🇪 +49</option>
+                                </select>
+                                <input 
+                                    type="tel" 
+                                    id="phone" 
+                                    name="phone" 
+                                    class="block w-full pl-20 pr-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 text-lg"
+                                    placeholder="664 1234567"
+                                    required
+                                >
                             </div>
-                            <div class="flex items-center">
-                                <svg class="w-5 h-5 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"></path>
-                                </svg>
-                                <span class="text-gray-700">www.zaruba-edv.at</span>
-                            </div>
+                            <p class="mt-2 text-sm text-gray-500">
+                                AT: 664 1234567 oder 677 61381622 | DE: 176 12345678 oder 01761234567
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">
+                                Kurze Nachricht (optional)
+                            </label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                rows="3" 
+                                class="block w-full px-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
+                                placeholder="Worum geht es in Ihrem Projekt?"
+                            ></textarea>
+                        </div>
+                        
+                        <button 
+                            type="submit" 
+                            id="submitBtn"
+                            class="w-full bg-green-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-700 focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-colors flex items-center justify-center"
+                        >
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                            </svg>
+                            WhatsApp Kontakt senden
+                        </button>
+                    </form>
+                    
+                    <div id="successMessage" class="hidden mt-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Vielen Dank! Ihre Kontaktdaten wurden erfolgreich übermittelt.
                         </div>
                     </div>
                     
-                    <div>
-                        <h4 class="text-xl font-bold text-gray-900 mb-4">Schnellanfrage</h4>
-                        <button onclick="openContactModal('general')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors mb-4">
-                            Beratungstermin vereinbaren
-                        </button>
-                        <p class="text-sm text-gray-600">Oder nutzen Sie den Chat-Button unten rechts für sofortige Hilfe!</p>
+                    <div id="errorMessage" class="hidden mt-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg">
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span id="errorText">Fehler beim Senden. Bitte versuchen Sie es erneut.</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -223,127 +336,196 @@
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="flex items-center justify-center mb-6">
-                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center mr-3">
-                    <span class="text-white font-bold text-lg">Z</span>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="flex items-center justify-center mb-6">
+                    <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">Z</span>
+                    </div>
+                    <span class="ml-3 text-xl font-bold">Zaruba-EDV</span>
                 </div>
-                <h1 class="text-2xl font-bold">Zaruba-EDV</h1>
+                <p class="text-gray-400 mb-6">
+                    Digitale Lösungen für moderne Unternehmen
+                </p>
+                <div class="flex justify-center space-x-6 text-sm text-gray-400">
+                    <span>Chatwoot Wien</span>
+                    <span>•</span>
+                    <span>N8N Österreich</span>
+                    <span>•</span>
+                    <span>Fionio Niederösterreich</span>
+                    <span>•</span>
+                    <span>Hetzner Hosting</span>
+                    <span>•</span>
+                    <span>Coolify Deployment</span>
+                </div>
+                <div class="mt-8 pt-8 border-t border-gray-800 text-sm text-gray-400">
+                    <p>&copy; 2024 Zaruba-EDV. Alle Rechte vorbehalten.</p>
+                </div>
             </div>
-            <p class="text-gray-400 mb-6">Professionelle Open Source Lösungen für modernen Kundensupport</p>
-            <p class="text-gray-500 text-sm">© 2024 Zaruba-EDV. Alle Rechte vorbehalten.</p>
         </div>
     </footer>
 
-    <!-- Contact Modal -->
-    <div id="contactModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
-        <div class="bg-white rounded-2xl p-8 max-w-md w-full mx-4">
-            <div class="text-center mb-6">
-                <h3 class="text-2xl font-bold text-gray-900 mb-2">Kontakt aufnehmen</h3>
-                <p class="text-gray-600">Wir melden uns schnellstmöglich bei Ihnen!</p>
-            </div>
-            
-            <form id="contactForm" class="space-y-4">
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Service</label>
-                    <select id="serviceSelect" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                        <option value="general">Allgemeine Beratung</option>
-                        <option value="chatwoot">Chatwoot Installation</option>
-                        <option value="n8n">n8n Workflow Automation</option>
-                        <option value="both">Chatwoot + n8n Paket</option>
-                    </select>
-                </div>
-                
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Ihr Name</label>
-                    <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Max Mustermann">
-                </div>
-                
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-2">E-Mail</label>
-                    <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="max@beispiel.de">
-                </div>
-                
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Nachricht</label>
-                    <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Beschreiben Sie Ihr Projekt..."></textarea>
-                </div>
-                
-                <div class="flex gap-4">
-                    <button type="button" onclick="closeContactModal()" class="flex-1 px-6 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors">
-                        Abbrechen
-                    </button>
-                    <button type="submit" class="flex-1 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
-                        Senden
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-
+    <!-- Chatwoot Widget Script -->
     <script>
+        (function(d,t) {
+            var BASE_URL="https://chatwoot.zaruba-edv.at";
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=BASE_URL+"/packs/js/sdk.js";
+            g.async = true;
+            s.parentNode.insertBefore(g,s);
+            g.onload=function(){
+                window.chatwootSDK.run({
+                    websiteToken: 'nanAt2X8hGzQvXKbtRSL6VSd',
+                    baseUrl: BASE_URL
+                })
+            }
+        })(document,"script");
+
         // Smooth scrolling functions
         function scrollToServices() {
             document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
         }
-        
+
         function scrollToContact() {
             document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
         }
-        
-        // Modal functions
-        function openContactModal(service) {
-            const modal = document.getElementById('contactModal');
-            const serviceSelect = document.getElementById('serviceSelect');
-            
-            if (service === 'chatwoot') {
-                serviceSelect.value = 'chatwoot';
-            } else if (service === 'n8n') {
-                serviceSelect.value = 'n8n';
-            } else {
-                serviceSelect.value = 'general';
-            }
-            
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
-        }
-        
-        function closeContactModal() {
-            const modal = document.getElementById('contactModal');
-            modal.classList.add('hidden');
-            modal.classList.remove('flex');
-        }
-        
-        // Form submission
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Demo: Ihre Anfrage wurde gesendet! In der echten Version würde hier eine E-Mail versendet werden.');
-            closeContactModal();
-        });
-        
-        // Close modal when clicking outside
-        document.getElementById('contactModal').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeContactModal();
-            }
-        });
-    </script>
 
-    <!-- Chatwoot SDK -->
-    <script>
-      (function(d,t) {
-        var BASE_URL="https://chatwoot.zaruba-edv.at";
-        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src=BASE_URL+"/packs/js/sdk.js";
-        g.async = true;
-        s.parentNode.insertBefore(g,s);
-        g.onload=function(){
-          window.chatwootSDK.run({
-            websiteToken: 'nanAt2X8hGzQvXKbtRSL6VSd',
-            baseUrl: BASE_URL
-          })
+        // Mobile menu toggle (if needed)
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
         }
-      })(document,"script");
+
+        // WhatsApp Form Handling
+        document.getElementById('whatsappForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const nameInput = document.getElementById('name');
+            const phoneInput = document.getElementById('phone');
+            const messageInput = document.getElementById('message');
+            const countryCodeSelect = document.getElementById('countryCode');
+            const submitBtn = document.getElementById('submitBtn');
+            const successMessage = document.getElementById('successMessage');
+            const errorMessage = document.getElementById('errorMessage');
+            const errorText = document.getElementById('errorText');
+            
+            // Hide previous messages
+            successMessage.classList.add('hidden');
+            errorMessage.classList.add('hidden');
+            
+            // Get and clean phone number
+            let phoneNumber = phoneInput.value.trim();
+            const countryCode = countryCodeSelect.value;
+            
+            // Remove all non-digit characters
+            phoneNumber = phoneNumber.replace(/\D/g, '');
+            
+            // Validate phone number based on country
+            if (!validatePhoneNumber(phoneNumber, countryCode)) {
+                if (countryCode === '+43') {
+                    errorText.textContent = 'Bitte geben Sie eine gültige österreichische Handynummer ein (z.B. 664 1234567)';
+                } else {
+                    errorText.textContent = 'Bitte geben Sie eine gültige deutsche Handynummer ein (z.B. 176 12345678)';
+                }
+                errorMessage.classList.remove('hidden');
+                return;
+            }
+            
+            // Format phone number with country code
+            const formattedPhone = countryCode + phoneNumber;
+            
+            // Disable button and show loading
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = `
+                <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                Wird gesendet...
+            `;
+            
+            try {
+                const response = await fetch('https://nachtn-new.zaruba-edv.at/webhook-test/4dc48319-757c-4019-a4d9-1798258786d2', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        phone: formattedPhone,
+                        name: nameInput.value.trim(),
+                        message: messageInput.value.trim() || 'Kontaktanfrage über Website',
+                        timestamp: new Date().toISOString(),
+                        source: 'zaruba-edv.at'
+                    })
+                });
+                
+                if (response.ok) {
+                    successMessage.classList.remove('hidden');
+                    nameInput.value = '';
+                    phoneInput.value = '';
+                    messageInput.value = '';
+                } else {
+                    throw new Error('Server error');
+                }
+                
+            } catch (error) {
+                console.error('Error:', error);
+                errorText.textContent = 'Fehler beim Senden. Bitte versuchen Sie es erneut oder nutzen Sie das Chat-Widget.';
+                errorMessage.classList.remove('hidden');
+            } finally {
+                // Reset button
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = `
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                    </svg>
+                    WhatsApp Kontakt senden
+                `;
+            }
+        });
+        
+        // Phone number validation for both countries
+        function validatePhoneNumber(phoneNumber, countryCode) {
+            console.log('Validating:', phoneNumber, 'for country:', countryCode);
+            
+            // Remove leading zeros if present
+            if (phoneNumber.startsWith('0')) {
+                phoneNumber = phoneNumber.substring(1);
+            }
+            
+            console.log('After removing leading zero:', phoneNumber);
+            
+            // Check if it's all digits
+            if (!/^\d+$/.test(phoneNumber)) {
+                console.log('Contains non-digit characters');
+                return false;
+            }
+            
+            if (countryCode === '+43') {
+                // Austrian mobile numbers: 9-11 digits, start with 6
+                if (phoneNumber.length < 9 || phoneNumber.length > 11) {
+                    console.log('AT: Invalid length - should be 9-11 digits');
+                    return false;
+                }
+                if (!phoneNumber.startsWith('6')) {
+                    console.log('AT: Does not start with 6');
+                    return false;
+                }
+            } else if (countryCode === '+49') {
+                // German mobile numbers: 10-11 digits, start with 1 (after removing 0)
+                if (phoneNumber.length < 10 || phoneNumber.length > 11) {
+                    console.log('DE: Invalid length - should be 10-11 digits');
+                    return false;
+                }
+                if (!phoneNumber.startsWith('1')) {
+                    console.log('DE: Does not start with 1');
+                    return false;
+                }
+            }
+            
+            console.log('Validation passed!');
+            return true;
+        }
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97a417faa5f8c026',t:'MTc1NzA1ODE4NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97c76a8d75195a60',t:'MTc1NzQyODU2OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
